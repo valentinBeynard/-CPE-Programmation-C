@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+typedef struct
+{
+	char* prenom;
+	char* nom;
+	char* adresse;
+	int note1;
+	int note2;
+
+}etudiant;
+
+
+int main()
+{
+	etudiant classe[2] = 
+			{
+				{"Valentin", "BEYNARD", "28 rue Gambetta", 15, 20 },
+				{"Florent", "NEANNE", "19 rue caca", 20, 5},
+				{"Arnaud", "DALH", "17 rue cpe", 20, 15},
+				{"Victor", "DUCRAY", "19 rue absence", 0, 2},
+				{"Julien", "BEYNARD", "28 rue gambetta", 20, 20}
+			};	
+
+	printf("Nom  : %s   Note1 = %i ", classe[0].prenom, classe[1].note1);			
+	return 0;
+
+
+}
